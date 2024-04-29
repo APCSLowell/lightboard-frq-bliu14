@@ -2,7 +2,7 @@ public class LightBoard
 {
   /** The lights on the board, where true represents on and false represents off.
    */
-  private boolean[][] lights;
+  private boolean[][] light;
 
   /** Constructs a LightBoard object having numRows rows and numCols columns.
    * Precondition: numRows > 0, numCols > 0
@@ -12,7 +12,7 @@ public class LightBoard
   {
     /* to be implemented in part (a) */
     for(int r = 0; r < numRows; r++) {
-      for(int c = 0; c < numsCols; c++) {
+      for(int c = 0; c < numCols; c++) {
         if(Math.random() < 0.4) {
           light[r][c] = true;
         }
