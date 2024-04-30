@@ -38,10 +38,10 @@ public class LightBoard
         on++;
       }
     }
-    if(on%2 == 0 && lights[row][col] == true) {
+    if(lights[row][col] == true && on%2 == 0) {
       return false;
     }
-    if(on%3 == 0 && lights[row][col] == false) {
+    if(lights[row][col] == false && on%3 == 0) {
       return true;
     }
     return lights[row][col];
