@@ -40,12 +40,10 @@ public class LightBoard
     if(on%2 == 0 && lights[row][col] == true) {
       return false;
     }
-    else if(on%3 == 0 && lights[row][col] == false) {
+    if(on%3 == 0 && lights[row][col] == false) {
       return true;
     }
-    else {
-      return lights[row][col];
-    }
+    return lights[row][col];
    
  
   }
